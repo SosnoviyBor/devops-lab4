@@ -11,4 +11,4 @@ app.get('/', (request, response) => {
 });
 
 app.listen(PORT, HOST);
-console.log(`Yup, im runnin' on http://${HOST}:${PORT}`);
+console.log(`Yup, im running' on http://${HOST}:${PORT}`);
