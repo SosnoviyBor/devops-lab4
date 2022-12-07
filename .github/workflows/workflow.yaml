@@ -2,9 +2,9 @@ name: DevOps CI/CD Lab
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:
