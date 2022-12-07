@@ -24,8 +24,8 @@ jobs:
         DEFAULT_BRANCH: master
         GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
 
+    - uses: actions/checkout@v1
     - name: Build Docker image and push it
-      uses: actions/checkout@v1
       run: |
         echo "${{ secrets.DOCKER_PASSWORD }} " | docker login -u "sosnoviybor" --password-stdin
         docker image build -t devops-lab4 .
